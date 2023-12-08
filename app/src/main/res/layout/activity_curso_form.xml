@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:gravity="center"
+    tools:context=".ui.theme.curso.CursoForm">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtForm"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="Novo Curso"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:maxLength="6"
+        android:hint="Nome - máximo 6 caracteres"
+        android:textColor="@color/fatec"
+        android:textSize="25dp"
+        android:textColorHint="@color/hint"
+        android:id="@+id/nome"
+        android:inputType="text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:layout_margin="15dp"
+        android:text="Nível"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ETEC"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:buttonTint="@color/fatec"
+            android:textColor="@color/fatec"
+            android:id="@+id/chkETEC"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chkFATEC"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:buttonTint="@color/fatec"
+            android:textColor="@color/fatec"
+            android:text="FATEC"/>
+
+    </RadioGroup>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:progressTint="@color/fatec"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:scaleY="3" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="EXCLUIR"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/btnVermelho"
+        android:id="@+id/btnExcluir"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Salvar"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/btnVerde"
+        android:id="@+id/btnSalvar"/>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

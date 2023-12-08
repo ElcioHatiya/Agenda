@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="30dp"
+    android:gravity="center"
+    android:background="@color/background"
+    tools:context=".ui.theme.usuario.AdminActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_margin="30dp"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="ADMINISTRADOR"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="20dp"
+        android:layout_margin="3dp"
+        android:textColor="@color/fatec"
+        android:textStyle="bold"
+        android:backgroundTint="@color/btnVerde"
+        android:text="USUÁRIOS"
+        android:id="@+id/btnProf"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="CURSOS"
+        android:textSize="20dp"
+        android:textColor="@color/fatec"
+        android:textStyle="bold"
+        android:layout_margin="3dp"
+        android:backgroundTint="@color/btnVerde"
+        android:id="@+id/btnCursos"/>
+
+    <Button
+        android:layout_height="60dp"
+        android:text="AMBIENTES"
+        android:backgroundTint="@color/btnVerde"
+        android:textSize="20dp"
+        android:layout_margin="3dp"
+        android:textColor="@color/fatec"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:id="@+id/btnAmb"/>
+
+    <Button
+        android:layout_height="60dp"
+        android:text="AGENDA  (Cancelar Reserva)"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_margin="3dp"
+        android:backgroundTint="@color/btnAgenda"
+        android:layout_width="match_parent"
+        android:id="@+id/btnAgenda"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Sair"
+        android:textSize="20dp"
+        android:layout_margin="3dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:backgroundTint="@color/btnVermelho"
+        android:id="@+id/btnLogout"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

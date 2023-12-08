@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:backgroundTint="@color/fundoCinza">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Nome Amb"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:id="@+id/txtNome"/>
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Acesso"
+            android:textStyle="bold"
+            android:textSize="13dp"
+            android:textColor="@color/black"
+            android:id="@+id/txtAcesso"/>
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtNivel"
+            android:textSize="13dp"
+            android:textColor="@color/fatec"
+            android:textStyle="bold"
+            android:text="Nivel"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:gravity="center"
+    tools:context=".ui.theme.usuario.UsuarioForm">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Novo Usuário"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:id="@+id/txtForm"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Nome - máx. 26 caracteres"
+        android:maxLength="26"
+        android:id="@+id/nome"
+        android:gravity="center"
+        android:textColor="@color/fatec"
+        android:textSize="25dp"
+        android:textColorHint="@color/hint"
+        android:inputType="text"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Email ( Login )"
+        android:id="@+id/email"
+        android:gravity="center"
+        android:textColor="@color/fatec"
+        android:textSize="25dp"
+        android:textColorHint="@color/hint"
+        android:inputType="text"/>
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Senha ( Login )"
+        android:inputType="textPassword"
+        android:textColor="@color/fatec"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:textColorHint="@color/hint"
+        android:id="@+id/senha"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exibir Senha"
+        android:buttonTint="@color/black"
+        android:textSize="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:id="@+id/chkSenha"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:id="@+id/telefone"
+        android:textColor="@color/fatec"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:textColorHint="@color/hint"
+        android:hint="Telefone - opcional"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:layout_margin="15dp"
+        android:text="Nível"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ETEC"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:buttonTint="@color/fatec"
+            android:textColor="@color/fatec"
+            android:id="@+id/chkETEC"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chkFATEC"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:buttonTint="@color/fatec"
+            android:textColor="@color/fatec"
+            android:text="FATEC"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chkAdmin"
+            android:textSize="15dp"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:buttonTint="@color/fatec"
+            android:textColor="@color/fatec"
+            android:text="ADMIN"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chkAluno"
+            android:textSize="15dp"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:buttonTint="@color/fatec"
+            android:textColor="@color/fatec"
+            android:text="ALUNO"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:layout_margin="15dp"
+        android:text="Acesso"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ativo"
+            android:textColor="@color/fatec"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:buttonTint="@color/fatec"
+            android:textSize="20dp"
+            android:id="@+id/chkAtivo"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bloqueado"
+            android:textColor="@color/fatec"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:buttonTint="@color/fatec"
+            android:textSize="20dp"
+            android:id="@+id/chkBloqueado"/>
+
+    </RadioGroup>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:progressTint="@color/fatec"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:scaleY="3" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="EXCLUIR"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/btnVermelho"
+        android:id="@+id/btnExcluir"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="SALVAR"
+        android:backgroundTint="@color/btnVerde"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:id="@+id/btnSalvar"/>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    android:background="@color/background"
+    tools:context=".ui.theme.disciplina.DisciplinaActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:id="@+id/txtForm"
+        android:layout_margin="20dp"
+        android:textColor="@color/black"
+        android:text="DISCIPLINAS"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:id="@+id/lstDisciplina"
+        android:background="@color/background"
+        tools:listitem="@layout/list_view_disciplina"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="@color/fatec"
+        android:layout_gravity="center_horizontal"
+        android:text="Mantenha pressionado para excluir a Disciplina "/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="NOVA DISCIPLINA"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:backgroundTint="@color/btnVerde"
+        android:id="@+id/btnNovaDiscip"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
